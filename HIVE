@@ -1,0 +1,18 @@
+bin/hdfs namenode -format
+sbin/start-all.sh
+bin/hdfs dfs -mkdir /data1
+bin/hdfs dfs -mkdir /data2
+bin/hdfs dfs -mkdir /data3
+bin/hdfs dfs -mkdir /data4
+bin/hdfs dfs -mkdir /data5
+bin/hdfs dfs -mkdir /data6
+bin/hdfs dfs -mkdir /data7
+bin/hdfs dfs -mkdir /data8
+bin/hdfs dfs -put /home/aniketh/Big_Data/age_specific_fertility_rates.csv /data1
+bin/hdfs dfs -put /home/aniketh/Big_Data/birth_death_growth_rates.csv /data2
+bin/hdfs dfs -put /home/aniketh/Big_Data/country_names_area.csv /data3
+bin/hdfs dfs -put /home/aniketh/Big_Data/midyear_population.csv /data4
+bin/hdfs dfs -put /home/aniketh/Big_Data/midyear_population_5yr_age_sex.csv /data5
+bin/hdfs dfs -put /home/aniketh/Big_Data/midyear_population_age_country_code.csv /data6
+bin/hdfs dfs -put /home/aniketh/Big_Data/midyear_population_age_sex.csv /data7
+bin/hdfs dfs -put /home/aniketh/Big_Data/mortality_life_expectancy.csv /data8
